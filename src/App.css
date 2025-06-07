@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+.App {
+  text-align: center;
+}
+
+.navbar {
+  background-color: navy;
+  padding: 0.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand span {
+  color: #4caf50;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  
+}
+
+.navbar-links li a:hover {
+  background-color:navy;
+}
+
+.navbar a:hover {
+  background-color: navy;
+}
+
+.content {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+.counter-container {
+  max-width: 500px;
+  margin: auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.counter-container h2 {
+  margin-bottom: 1rem;
+  color: #4caf50;
+}
+
+.count-display {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.button-group button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.button-group button:disabled {
+  background-color: #a5d6a7;
+  cursor: not-allowed;
+}
+
+.button-group button:hover:not(:disabled) {
+  background-color: #388e3c;
+}
+
+.settings {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.settings label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #333;
+  min-width: 120px;
+}
+
+.settings input[type="number"] {
+  padding: 0.4rem;
+  margin-top: 0.3rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.stats {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 1rem;
+}
